@@ -148,46 +148,6 @@ export default function Projects() {
                     </div>
                 </div>
             </section>
-
-            {/* Strategic Goals Section */}
-            <section className="py-16 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-                    <div className="text-center mb-10">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Strategic Objectives</h2>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            The Ministry is committed to these key strategic objectives to strengthen local governance, empower communities, and preserve traditional institutions across Imo State.
-                        </p>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {[
-                            "Strengthen local government administration and service delivery capacity across all 27 LGAs.",
-                            "Enhance community participation in governance and development processes.",
-                            "Preserve and promote traditional institutions and chieftaincy affairs.",
-                            "Foster peaceful coexistence and conflict resolution in communities.",
-                            "Promote transparency and accountability in local government operations.",
-                            "Build capacity of traditional rulers and community leaders.",
-                            "Facilitate grassroots development through community-driven initiatives.",
-                            "Modernize local government systems through digital transformation.",
-                            "Strengthen partnerships between government and traditional institutions.",
-                            "Ensure inclusive governance that represents all community interests."
-                        ].map((goal, index) => (
-                            <AnimatedEntrance 
-                                key={index} 
-                                {...ANIMATION_PRESETS.CARD_FADE_UP} 
-                                delay={0.1 * index}
-                            >
-                                <div className="flex items-start p-4 bg-white rounded-lg shadow-sm">
-                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-4">
-                                        <span className="text-green-600 font-semibold">{index + 1}</span>
-                                    </div>
-                                    <p className="text-gray-700">{goal}</p>
-                                </div>
-                            </AnimatedEntrance>
-                        ))}
-                    </div>
-                </div>
-            </section>
         </div>
     );
 }

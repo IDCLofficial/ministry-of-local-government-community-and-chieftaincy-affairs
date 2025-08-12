@@ -29,7 +29,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
             <AnimatedEntrance {...ANIMATION_PRESETS.IMAGE_FADE_UP} className="order-2 lg:order-1">
               <Image
-                src="/assets/local-government.png"
+                src="/assets/no-image.png"
                 alt="Local government administration and community development"
                 width={600}
                 height={400}
@@ -46,11 +46,6 @@ export default function Home() {
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   Welcome to the Ministry of Local Government Area, Community and Chieftaincy Affairs – Imo State. We are dedicated to fostering responsive, transparent, and accountable governance at the grassroots level. Our mission is to support the 27 Local Government Areas in delivering effective public service, promote inclusive community development, and protect the integrity of our revered traditional institutions. Through policy direction, capacity-building, and collaboration with stakeholders, this ministry ensures that both modern governance and cultural heritage serve the common good of all Imolites.
                 </p>
-              </AnimatedEntrance>
-              <AnimatedEntrance {...ANIMATION_PRESETS.BUTTON_SCALE_UP} delay={600}>
-                <button className="bg-[#4CAF50]/90 hover:bg-[#4CAF50] cursor-pointer w-fit text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:transform hover:scale-105 transition-all duration-300">
-                  Learn more
-                </button>
               </AnimatedEntrance>
             </div>
           </div>
@@ -78,16 +73,18 @@ export default function Home() {
                   I am committed to aligning traditional institutions with modern governance for the sustainable growth of Imo State, ensuring that both modern governance and cultural heritage serve the common good of all Imolites.&ldquo;
                 </p>
               </AnimatedEntrance>
-              <AnimatedEntrance {...ANIMATION_PRESETS.BUTTON_SCALE_UP} delay={600}>
-                <button className="bg-[#4CAF50]/90 hover:bg-[#4CAF50] cursor-pointer text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:transform hover:scale-105 transition-all duration-300">
-                  Read Full Bio
-                </button>
+              <AnimatedEntrance {...ANIMATION_PRESETS.BUTTON_SCALE_UP} delay={600} className="mt-5">
+                <Link href="/about#commissioner-profile" className="">
+                  <button className="bg-[#4CAF50]/90 hover:bg-[#4CAF50] cursor-pointer text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:transform hover:scale-105 transition-all duration-300">
+                    Read Full Bio
+                  </button>
+                </Link>
               </AnimatedEntrance>
             </div>
             <div className="flex-1 order-1 lg:order-2">
               <AnimatedEntrance {...ANIMATION_PRESETS.IMAGE_FADE_UP}>
                 <Image
-                  src="/assets/commissioner-humanitarian.png"
+                  src="/assets/no-image.png"
                   alt="Chief Kenneth Okafor - Honourable Commissioner for Humanitarian Affairs"
                   width={500}
                   height={600}
@@ -103,8 +100,8 @@ export default function Home() {
       <section className="py-8 sm:py-12 md:py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedEntrance {...ANIMATION_PRESETS.TITLE_FADE_DOWN} className="text-center mb-6 sm:mb-8 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
-              Ministry Strategic Goals
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4">
+              Ministry Priorities
             </h2>
           </AnimatedEntrance>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
@@ -115,7 +112,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base md:text-xl lg:text-2xl">Inclusive Grassroots Governance</h3>
                 <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3 md:mb-4 leading-tight">Promote inclusive and participatory governance at the grassroots level across all 27 Local Government Areas in Imo State.</p>
-                <button className="text-green-500 font-medium text-xs sm:text-sm hover:text-green-600 transition-colors">Learn More</button>
+                <Link href={"/about"}><button className="text-green-500 font-medium text-xs sm:text-sm hover:text-green-600 transition-colors">Learn More</button></Link>
               </div>
             </AnimatedEntrance>
             <AnimatedEntrance {...ANIMATION_PRESETS.CARD_FADE_UP} delay={STAGGER_DELAYS.MEDIUM[1]}>
@@ -127,7 +124,7 @@ export default function Home() {
                 <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3 md:mb-4 leading-tight">
                   Strengthen traditional institutions and their roles in community development while preserving cultural heritage.
                 </p>
-                <button className="text-green-500 font-medium text-xs sm:text-sm hover:text-green-600 transition-colors">Learn More</button>
+                <Link href={"/about"}><button className="text-green-500 font-medium text-xs sm:text-sm hover:text-green-600 transition-colors">Learn More</button></Link>
               </div>
             </AnimatedEntrance>
             <AnimatedEntrance {...ANIMATION_PRESETS.CARD_FADE_UP} delay={STAGGER_DELAYS.MEDIUM[2]}>
@@ -139,7 +136,7 @@ export default function Home() {
                 <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3 md:mb-4 leading-tight">
                   Enhance transparency and accountability in local government administration through effective monitoring and evaluation.
                 </p>
-                <button className="text-green-500 font-medium text-xs sm:text-sm hover:text-green-600 transition-colors">Learn More</button>
+                <Link href={"/about"}><button className="text-green-500 font-medium text-xs sm:text-sm hover:text-green-600 transition-colors">Learn More</button></Link>
               </div>
             </AnimatedEntrance>
             <AnimatedEntrance {...ANIMATION_PRESETS.CARD_FADE_UP} delay={STAGGER_DELAYS.MEDIUM[3]}>
