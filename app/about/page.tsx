@@ -291,9 +291,6 @@ export default function About() {
                                 <h3 className="text-xl font-bold text-gray-900">Hon. (Mrs.) Rubby Emele</h3>
                                 <p className="text-green-700 font-medium mt-1">Hon. Commissioner for Local Government Area, Community and Chieftaincy Affairs</p>
                                 <p className="text-sm text-gray-500 mt-2">Appointed: 2021, Reappointed: 2024</p>
-                                <p className="mt-4 text-gray-600">
-                                    A native of Isiala Mbano and former Chairman of the Local Government and ALGON Imo, she leads the ministry with integrity, focus, and passion for inclusive development. Committed to aligning traditional institutions with modern governance for the sustainable growth of Imo State.
-                                </p>
                             </div>
                         </div>
 
@@ -311,10 +308,7 @@ export default function About() {
                             <div className="p-6">
                                 <h3 className="text-xl font-bold text-gray-900">[Permanent Secretary&apos;s Name]</h3>
                                 <p className="text-green-700 font-medium mt-1">Permanent Secretary</p>
-                                <p className="mt-4 text-gray-600">
-                                    Provides administrative leadership and ensures the effective implementation of the Ministry&apos;s policies, programs, and initiatives across all departments and local government areas in Imo State.
-                                </p>
-                            </div>
+                             </div>
                         </div>
                     </div>
                 </div>
