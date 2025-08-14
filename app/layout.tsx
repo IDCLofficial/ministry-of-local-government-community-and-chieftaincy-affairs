@@ -1,23 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation";
 import Footer from "./components/Footer";
 import NextTopLoader from "nextjs-toploader";
 import { SITE_METADATA } from "@/utils/constants/metadata";
 import ToasterProvider from "./components/ToasterProvider";
-
-const poppinsSans = Poppins({
-  variable: "--font-poppins-sans",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
-
-const poppinsMono = Poppins({
-  variable: "--font-poppins-mono",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
 
 export const metadata: Metadata = SITE_METADATA;
 
@@ -29,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppinsSans.variable} ${poppinsMono.variable} antialiased relative bg-white`}
+        className={`antialiased relative bg-white`}
       >
         <NextTopLoader 
           color="#4CAF50"

@@ -29,7 +29,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
             <AnimatedEntrance {...ANIMATION_PRESETS.IMAGE_FADE_UP} className="order-2 lg:order-1">
               <Image
-                src="/assets/no-image.png"
+                src="/photos/Structure - MINISTRY OF LOCAL GOVERNMENT AND CHIEFTAINCY AFFAIRS.jpg"
                 alt="Local government administration and community development"
                 width={600}
                 height={400}
@@ -84,8 +84,8 @@ export default function Home() {
             <div className="flex-1 order-1 lg:order-2">
               <AnimatedEntrance {...ANIMATION_PRESETS.IMAGE_FADE_UP}>
                 <Image
-                  src="/assets/no-image.png"
-                  alt="Chief Kenneth Okafor - Honourable Commissioner for Humanitarian Affairs"
+                  src="/photos/Hon. (Mrs.) Rubby Emele.png"
+                  alt="Hon. (Mrs.) Rubby Emele"
                   width={500}
                   height={600}
                   className="rounded-lg shadow-lg w-full h-auto"
@@ -175,17 +175,29 @@ export default function Home() {
               Government Partners
             </h2>
           </AnimatedEntrance>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4 sm:gap-6 md:gap-8 items-center">
-            {[1, 2, 3, 4, 5, 6, 7].map((item, index) => (
-              <AnimatedEntrance key={item} {...ANIMATION_PRESETS.CARD_FADE_UP} delay={STAGGER_DELAYS.FAST[index] || STAGGER_DELAYS.FAST[5]}>
+          <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-6 sm:gap-8 items-center">
+            {[
+              { name: "Imo State House of Assembly", logo: "/photos/imo-house-assembly-logo.jpeg" },
+              { name: "Ministry of Finance", logo: "/photos/ministry-finance-logo-1.webp" },
+              { name: "National Bureau of Statistics", logo: "/photos/nbs-logo.jpeg" },
+              { name: "Federal Ministry of Interior", logo: "/photos/federal-interior-logo.png" },
+              { name: "National Council on Local Government", logo: "/photos/nclg-logo.png" }
+            ].map((partner, index) => (
+              <AnimatedEntrance
+                key={partner.name}
+                {...ANIMATION_PRESETS.CARD_FADE_UP}
+                delay={STAGGER_DELAYS.MEDIUM[index % STAGGER_DELAYS.MEDIUM.length]}
+                className="flex items-center justify-center"
+              >
                 <div className="text-center hover:transform hover:scale-110 transition-all duration-300 cursor-pointer">
                   <div className="bg-white p-2 rounded-lg shadow-sm">
-                    <Image 
-                      src={`/assets/government-partner-${item}.png`}
-                      alt={`Government Partner ${item}`}
+                    <Image
+                      src={partner.logo}
+                      alt={`Partner ${partner.name}`}
                       width={100}
+                      title={`Partner ${partner.name}`}
                       height={60}
-                      className="w-full h-auto object-contain"
+                      className="w-full h-auto object-contain aspect-[2/1]"
                     />
                   </div>
                 </div>

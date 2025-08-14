@@ -16,7 +16,7 @@ export default function About() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
                         <AnimatedEntrance {...ANIMATION_PRESETS.IMAGE_FADE_UP} className="order-2 lg:order-1">
                             <Image
-                                src="/assets/local-government.png"
+                                src="/photos/Photo - MINISTRY OF LOCAL GOVERNMENT AND CHIEFTAINCY AFFAIRS.jpg"
                                 alt="Local government administration and community development"
                                 width={600}
                                 height={400}
@@ -105,13 +105,10 @@ export default function About() {
                             <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
                                 Under her stewardship, the ministry has prioritized peacebuilding, town union strengthening, chieftaincy conflict resolution, and youth empowerment. She introduced a needs-based development approach and remains a vocal advocate for responsive, community-led governance, committed to aligning traditional institutions with modern governance for the sustainable growth of Imo State.
                             </p>
-                            {/* <button className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-sm sm:text-base font-semibold transition-colors">
-                    Read Full Bio
-                </button> */}
                         </div>
-                        <div className="order-1 lg:order-2">
+                        <div className="order-1 lg:order-2 aspect-[3/4]">
                             <Image
-                                src="/assets/commissioner-local-govt.png"
+                                src="/photos/Hon. (Mrs.) Rubby Emele.png"
                                 alt="Hon. (Mrs.) Rubby Emele - Honourable Commissioner"
                                 width={500}
                                 height={600}
@@ -278,13 +275,13 @@ export default function About() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
                         {/* Commissioner */}
                         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-                            <div className="h-64 bg-gray-100 overflow-hidden">
+                            <div className="aspect-[3.8/4] bg-gray-100 overflow-hidden">
                                 <Image
-                                    src="/assets/no-image.png"
+                                    src="/photos/Hon. (Mrs.) Rubby Emele.png"
                                     alt="Hon. (Mrs.) Rubby Emele - Commissioner for Local Government Area, Community and Chieftaincy Affairs"
                                     width={400}
                                     height={400}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover object-top"
                                 />
                             </div>
                             <div className="p-6">
@@ -296,17 +293,17 @@ export default function About() {
 
                         {/* Permanent Secretary */}
                         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-                            <div className="h-64 bg-gray-100 overflow-hidden">
+                            <div className="aspect-[3.8/4] bg-gray-100 overflow-hidden">
                                 <Image
-                                    src="/assets/no-image.png"
+                                    src="/photos/AMAFILI ISABELLA KELECHI PERMANENT SECRETARY. MINISTRY OF LOCAL GOVERNMENT AND CHIEFTAINCY AFFAIRS..jpeg"
                                     alt="Permanent Secretary, Ministry of Local Government Area, Community and Chieftaincy Affairs"
                                     width={400}
                                     height={400}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover object-top"
                                 />
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-bold text-gray-900">[Permanent Secretary&apos;s Name]</h3>
+                                <h3 className="text-xl font-bold text-gray-900">Amafili Isabella Kelechi</h3>
                                 <p className="text-green-700 font-medium mt-1">Permanent Secretary</p>
                              </div>
                         </div>
@@ -331,7 +328,7 @@ export default function About() {
                         </div>
                         <div>
                             <Image
-                                src="/assets/environment-building.png"
+                                src="/photos/Structures - MINISTRY OF LOCAL GOVERNMENT AND CHIEFTAINCY AFFAIRS.jpg"
                                 alt="Ministry of Humanitarian Affairs Building"
                                 width={600}
                                 height={400}

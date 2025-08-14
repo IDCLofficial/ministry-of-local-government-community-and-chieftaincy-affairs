@@ -38,7 +38,6 @@ export const HERO_CONFIGS = {
     description: "Comprehensive services supporting local governments, communities, and traditional institutions in Imo State",
     height: 'medium' as const,
     alignment: 'left' as const,
-    overlay: false
   },
   
   NEWS: {
