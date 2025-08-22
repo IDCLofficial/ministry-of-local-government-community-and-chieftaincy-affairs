@@ -44,7 +44,7 @@ export const NAV_LINKS: NavLink[] = [
 
 export const CONTACT_INFO = {
   address: "Block 5, State Secretariat Complex, Port Harcourt Road, Owerri, Imo State",
-  email: "localgovt@imostate.gov.ng",
+  email: "info@localgovt.im.gov",
   phone: "+234 803 123 4567",
   workingHours: "Monday – Friday (8:00am – 4:00pm)"
 };
