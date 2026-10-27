@@ -4,6 +4,14 @@ import TabContentSystem from "../components/TabContentSystem";
 import { FaUsers, FaGavel, FaHandshake, FaBook, FaLandmark, FaMapMarkerAlt } from "react-icons/fa";
 import HeroSection from "../../components/HeroSection";
 import { HERO_CONFIGS } from "../../utils/constants/heroSections";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Departments",
+  description: "Departments and units of the Ministry of Local Government, Community & Chieftaincy Affairs, Imo State Government.",
+  path: "/department",
+});
+
 
 export default function Department() {
     return (

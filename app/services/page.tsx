@@ -2,6 +2,14 @@ import HeroSection from "../../components/HeroSection";
 import { HERO_CONFIGS } from "../../utils/constants/heroSections";
 import AnimatedEntrance from "../../components/AnimatedEntrance";
 import { ANIMATION_PRESETS, STAGGER_DELAYS } from "../../utils/constants/animations";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Services",
+  description: "Services offered by the Ministry of Local Government, Community & Chieftaincy Affairs of the Imo State Government.",
+  path: "/services",
+});
+
 
 export default function Services() {
     return (
