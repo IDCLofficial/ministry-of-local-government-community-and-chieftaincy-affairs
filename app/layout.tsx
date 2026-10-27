@@ -19,6 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          src="https://pulse-track.onrender.com/tracker.min.js"
+          data-key="pk_live_827e7c8fd0160a5d36c3caf8"
+          defer
+        />
+      </head>
       <body
         className={`antialiased relative bg-white`}
       >
