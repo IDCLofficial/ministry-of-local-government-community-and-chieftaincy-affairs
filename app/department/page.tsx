@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Departments",
-  description: "Departments and units of the Ministry of Local Government, Community & Chieftaincy Affairs, Imo State Government.",
+  description: "Departments and units of the Ministry of Local Government, Community and Chieftaincy Affairs, Imo State Government.",
   path: "/department",
 });
 

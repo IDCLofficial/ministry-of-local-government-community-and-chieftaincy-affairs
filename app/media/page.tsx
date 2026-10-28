@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Media Gallery",
-  description: "Photo and media gallery of the Ministry of Local Government, Community & Chieftaincy Affairs, Imo State Government.",
+  description: "Photo and media gallery of the Ministry of Local Government, Community and Chieftaincy Affairs, Imo State Government.",
   path: "/media",
 });
 

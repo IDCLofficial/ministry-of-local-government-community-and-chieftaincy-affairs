@@ -10,8 +10,8 @@ import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: { absolute: "Ministry of Local Government, Community & Chieftaincy Affairs | Imo State Government" },
-  description: "Official website of the Ministry of Local Government, Community & Chieftaincy Affairs, Imo State Government: services, departments, projects, news and events.",
+  title: { absolute: "Imo State Ministry of Local Government, Community and Chieftaincy Affairs" },
+  description: "Support for Imo State's 27 local government areas, community development and traditional institutions, including chieftaincy affairs.",
   path: "/",
 });
 

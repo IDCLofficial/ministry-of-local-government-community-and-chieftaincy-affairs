@@ -2,7 +2,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Contact Us",
-  description: "Contact the Ministry of Local Government, Community & Chieftaincy Affairs, Imo State Government: office location and ways to reach the ministry.",
+  description: "Contact the Ministry of Local Government, Community and Chieftaincy Affairs, Imo State Government: office location and ways to reach the ministry.",
   path: "/contact",
 });
 

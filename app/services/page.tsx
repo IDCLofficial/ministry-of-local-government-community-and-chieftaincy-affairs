@@ -5,8 +5,8 @@ import { ANIMATION_PRESETS, STAGGER_DELAYS } from "../../utils/constants/animati
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Services",
-  description: "Services offered by the Ministry of Local Government, Community & Chieftaincy Affairs of the Imo State Government.",
+  title: "Local Government, Community and Chieftaincy Services",
+  description: "Local government administration and finance, community development programmes, chieftaincy affairs management and boundary dispute resolution in Imo State.",
   path: "/services",
 });
 

@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "News",
-  description: "Latest news, announcements and updates from the Ministry of Local Government, Community & Chieftaincy Affairs, Imo State.",
+  description: "Latest news, announcements and updates from the Ministry of Local Government, Community and Chieftaincy Affairs, Imo State.",
   path: "/news",
 });
 
